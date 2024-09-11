@@ -18,6 +18,7 @@ The client connects to the server and sends the server's encrypted password, whi
 To disconnect a user these two commands are used
     - /disconnect - Сloses the chat with the user and sends a request to the server that he is already free and an activator for other connections.
     - /exit - This disconnects the user permanently and sends a request to the server where the user's status becomes inactive.
+    
 To run the client for the first time, you need to use sudo and provide the server's IP address and password using the --config [server IP] [server password] option. These will be stored in the server_config.conf file located in the /etc directory. Sudo is used to store the file in the /etc directory. After the file is created, you can run the program without sudo. You can use the --help option for assistance.
 ## Technology Stack
 - Linux (distribution Ubuntu OS )
