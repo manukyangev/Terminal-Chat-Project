@@ -8,19 +8,19 @@ The ability to transfer data between two devices on the same local network.
 ## Team Members
 - **Team Member 1 Gevorg Manukyan:
 - **Team Member 2 Tigran Harutyunyan:
-##Prerequisites
+## Prerequisites
     - C++ Compiler (e.g., g++, clang++)
     - Boost Library
     - OpenSSL Library
     - CMake (version 3.10 or higher)
-##Installation
+## Installation
     - To download the Boost library
           sudo apt-get install libboost-all-dev
     - To download the OpenSSL library
           sudo apt-get install openssl libssl-dev
     - To download CMake
           sudo apt-get install cmake
-##Building the Project
+## Building the Project
     - Clone the repository
           git clone https://github.com/manukyangev/Terminal-Chat-Project.git
           cd Terminal-Chat-Project
