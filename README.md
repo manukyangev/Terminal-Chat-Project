@@ -24,10 +24,16 @@ The ability to transfer data between two devices on the same local network.
     - Clone the repository
           git clone https://github.com/manukyangev/Terminal-Chat-Project.git
           cd Terminal-Chat-Project
-          mkdir build
-          cd build
-          cmake ..
-          make
+          cd client_class
+              mkdir build
+              cd build
+              cmake ..
+              make
+          cd ../Server
+              mkdir build
+              cd build
+              cmake ..
+              make
 ## Usage
 # Server 
 The server accepts client requests. When a client connects to the server, it sends the server's encrypted password, and the server checks if the password is correct. If it is, the client can log in; if not, it prompts the client to enter the password again. After that, the server receives the client's IP address and name, which it stores in a file. The server also keeps track of the status of these clients—whether they are active or not, and if active, whether they are available or not. Then, the server sends an update to all active clients. This update contains a list of clients, their names, and IP addresses. This cycle continues asynchronously, with the server creating new sockets, accepting client connections, checking the password, saving their data, and sending updates to active clients whenever there are changes.
